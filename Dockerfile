@@ -1,5 +1,5 @@
 FROM rust:1.54 as build
-LABEL maintainer="Mingwei Zhang <mingwei@caida.org>"
+LABEL maintainer="Mingwei Zhang <mingwei@mwzhang.com>"
 
 # create a new empty shell project
 RUN USER=root cargo new --bin my_project
