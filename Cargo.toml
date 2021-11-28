@@ -1,0 +1,46 @@
+[package]
+name = "grip_api"
+version = "0.3.3"
+authors = ["Mingwei Zhang <mingwei@caida.org>"]
+edition = "2018"
+
+[[bin]]
+name = "grip-api"
+path = "src/bin/api.rs"
+
+[[bin]]
+name = "grip-cli"
+path = "src/bin/cli.rs"
+
+[dependencies]
+# general
+regex = "1"
+
+# webframework
+rocket = {version="0.5.0-rc.1", features=["json"]}
+reqwest = "0.9.19"
+
+# elasticsearch
+elastic = "0.21.0-pre.5"
+elastic_derive = "~0.21.0-pre.5"
+
+# serialization
+serde = {version="1.0", features=["derive"]}
+serde_json = "1.0"
+serde_derive = "1.0"
+
+# configuration
+config = "0.9"
+toml = "0.4"
+structopt = "0.2"
+clap = "3.0.0-beta.2"
+
+chrono = "0.4.11"
+lazy_static = "1.4.0"
+
+# authentication
+# jsonwebtoken = "7.2.0"
+auth0_rs = "0.2.0"
+
+# mail
+lettre = "0.10.0-rc.3"
