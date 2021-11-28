@@ -1,9 +1,9 @@
 [default]
 address = "127.0.0.1"
 port = 8001
-elastic_url = "http://clayface.caida.org:9200"
+elastic_url = "http://panarea1.cc.gatech.edu:9200"
 
 [release]
 address = "0.0.0.0"
 port = 8000
-elastic_url = "http://clayface.caida.org:9200"
+elastic_url = "http://panarea1.cc.gatech.edu:9200"

@@ -47,7 +47,7 @@ JSON QUERY APIS
 
 #[get("/json/tags")]
 pub fn json_get_tags() -> Json<Value> {
-    let tags: Value = reqwest::get(format!("http://10.250.203.3:5000/tags").as_str())
+    let tags: Value = reqwest::get(format!("http://levanzo.cc.gatech.edu:5000/tags").as_str())
         .unwrap()
         .json()
         .unwrap();
@@ -56,7 +56,7 @@ pub fn json_get_tags() -> Json<Value> {
 
 #[get("/json/blacklist")]
 pub fn json_get_blacklist() -> Json<Value> {
-    let blacklist: Value = reqwest::get(format!("http://10.250.203.3:5000/blacklist").as_str())
+    let blacklist: Value = reqwest::get(format!("http://levanzo.cc.gatech.edu:5000/blacklist").as_str())
         .unwrap()
         .json()
         .unwrap();
@@ -65,7 +65,7 @@ pub fn json_get_blacklist() -> Json<Value> {
 
 #[get("/json/blocklist")]
 pub fn json_get_blocklist() -> Json<Value> {
-    let blacklist: Value = reqwest::get(format!("http://10.250.203.3:5000/blacklist").as_str())
+    let blacklist: Value = reqwest::get(format!("http://levanzo.cc.gatech.edu:5000/blacklist").as_str())
         .unwrap()
         .json()
         .unwrap();
@@ -74,7 +74,7 @@ pub fn json_get_blocklist() -> Json<Value> {
 
 #[get("/json/asndrop")]
 pub fn json_get_asndrop() -> Json<Value> {
-    let asndrop: Value = reqwest::get(format!("http://10.250.203.3:5000/asndrop").as_str())
+    let asndrop: Value = reqwest::get(format!("http://levanzo.cc.gatech.edu:5000/asndrop").as_str())
         .unwrap()
         .json()
         .unwrap();

@@ -72,7 +72,7 @@ impl ElasticSearchBackend {
         let datetime = DateTime::<Utc>::from(d);
 
         let query = format!(
-            "http://clayface.caida.org:9200/observatory-v3-events-{}-{}-{:02}/_doc/{}",
+            "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-{}-{:02}/_doc/{}",
             event_type,
             datetime.year(),
             datetime.month(),
@@ -86,7 +86,7 @@ impl ElasticSearchBackend {
             return Ok(document);
         } else {
             let query = format!(
-                "http://clayface.caida.org:9200/observatory-v3-events-{}-{}-{:02}/event_result/{}",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-{}-{:02}/event_result/{}",
                 event_type,
                 datetime.year(),
                 datetime.month(),
@@ -458,11 +458,11 @@ impl ElasticSearchBackend {
         let client = reqwest::Client::new();
         let url = match debug {
             true => format!(
-                "http://clayface.caida.org:9200/observatory-v3-test-events-{}-*/_count",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v3-test-events-{}-*/_count",
                 etype
             ),
             false => format!(
-                "http://clayface.caida.org:9200/observatory-v3-events-{}-*/_count",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-*/_count",
                 etype
             ),
         };

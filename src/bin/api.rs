@@ -37,7 +37,7 @@ use rocket::serde::Deserialize;
 use rocket::{Request, Response};
 
 use auth0_rs::Auth0;
-use grip_api::backend::api_auth::*;
+// use grip_api::backend::api_auth::*;
 use grip_api::backend::api_external::*;
 use grip_api::backend::api_json::*;
 use grip_api::backend::api_stats::*;
@@ -97,11 +97,11 @@ async fn main() {
         .extract()
         .expect("failed to extract configuration parameters");
 
-    let res = reqwest::get(std::env::var("JWKS_URL").unwrap().as_str())
-        .unwrap()
-        .text()
-        .unwrap();
-    let auth0 = Auth0::new(res.as_str()).unwrap();
+    // let res = reqwest::get(std::env::var("JWKS_URL").unwrap().as_str())
+    //     .unwrap()
+    //     .text()
+    //     .unwrap();
+    // let auth0 = Auth0::new(res.as_str()).unwrap();
 
     dbg!(&config);
     rocket
@@ -120,13 +120,13 @@ async fn main() {
                 json_get_asndrop,
                 json_get_hegemony,
                 json_get_asrank,
-                sensitive,
-                feedback,
+                // sensitive,
+                // feedback,
             ],
         )
         .manage(SharedData {
             es_url: config.elastic_url,
-            auth0,
+            //auth0,
         })
         .attach(CORS())
         .launch()
