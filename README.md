@@ -9,6 +9,10 @@ Web API backend for the Global Routing Intelligence Platform.
 - Rocket.toml: configuring webservice basics
 - Config.toml: general configurations
 
+## Minimum Rust Version
+
+1.56 for Rust edition 2021.
+
 ## Installation with Docker
 
 ### Build container

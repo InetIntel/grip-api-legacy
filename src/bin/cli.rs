@@ -33,9 +33,9 @@
 use serde::Serialize;
 use serde_json::Value;
 
-use clap::Clap;
+use clap::Parser;
 
-#[derive(Debug, Clap, Serialize)]
+#[derive(Debug, Parser, Serialize)]
 #[clap()]
 struct Opts {
     /// Event type to search for

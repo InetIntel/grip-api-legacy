@@ -1,4 +1,4 @@
-FROM rust:1.54 as build
+FROM rust:1.56 as build
 LABEL maintainer="Mingwei Zhang <mingwei@mwzhang.com>"
 
 # create a new empty shell project
