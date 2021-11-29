@@ -1,8 +1,8 @@
 [package]
 name = "grip_api"
 version = "0.3.3"
-authors = ["Mingwei Zhang <mingwei@caida.org>"]
-edition = "2018"
+authors = ["Mingwei Zhang <mingwei@mwzhang.com>"]
+edition = "2021"
 
 [[bin]]
 name = "grip-api"
@@ -33,7 +33,7 @@ serde_derive = "1.0"
 config = "0.9"
 toml = "0.4"
 structopt = "0.2"
-clap = "3.0.0-beta.2"
+clap = "3.0.0-beta.5"
 
 chrono = "0.4.11"
 lazy_static = "1.4.0"
