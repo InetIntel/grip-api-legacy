@@ -2,12 +2,16 @@
 
 [![Docker Image CI](https://github.com/CAIDA/grip-api/actions/workflows/docker-image.yml/badge.svg)](https://github.com/CAIDA/grip-api/actions/workflows/docker-image.yml)
 
-Web API backend for the Global Routing Intelligence Platform Project.
+Web API backend for the Global Routing Intelligence Platform.
 
 ## Configuration Files
 
 - Rocket.toml: configuring webservice basics
 - Config.toml: general configurations
+
+## Minimum Rust Version
+
+1.56 for Rust edition 2021.
 
 ## Installation with Docker
 

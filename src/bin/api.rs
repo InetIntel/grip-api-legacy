@@ -36,8 +36,6 @@ use rocket::routes;
 use rocket::serde::Deserialize;
 use rocket::{Request, Response};
 
-use auth0_rs::Auth0;
-// use grip_api::backend::api_auth::*;
 use grip_api::backend::api_external::*;
 use grip_api::backend::api_json::*;
 use grip_api::backend::api_stats::*;
