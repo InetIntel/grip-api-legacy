@@ -39,7 +39,7 @@ use crate::backend::data::*;
 use crate::backend::elastic::ElasticSearchBackend;
 use crate::backend::utils::*;
 
-const DATA_COPYRIGHT: &str = "This data is Copyright (c) 2021 Georgia Tech Research Corporation. All Rights Reserved.";
+const DATA_COPYRIGHT: &str = "This data is Copyright (c) 2021 Georgia Institute of Technology. All Rights Reserved.";
 
 /*
 JSON QUERY APIS
