@@ -2,7 +2,7 @@
 
   - Base API URL: <https://api.grip.inetintel.cc.gatech.edu/dev/>
   - Current Prototype Web Interface:
-    <https://grip-dev.inetintel.cc.gatech.edu>
+    <https://grip.inetintel.cc.gatech.edu>
 
 # Events Data
 
