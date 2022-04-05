@@ -19,9 +19,9 @@ objects, each containing a matching detected event.
 Example:
 
   - Default front-page query:
-      - [example query](https://api.grip.inetintel.cc.gatech.edu/dev/json/events?length=10&start=0&ts_start=2020-08-09T19%3A03&ts_end=2020-08-10T19%3A03&min_susp=80&max_susp=100&event_type=moas)
+      - [example query](https://api.grip.inetintel.cc.gatech.edu/dev/json/events?length=10&start=0&ts_start=2022-01-09T19%3A03&ts_end=2022-01-10T19%3A03&min_susp=80&max_susp=100&event_type=moas)
       - Search for 10 suspicious MOAS events during one-day period
-        (August 9 to August 10).
+        (January 9 to January 10).
 
 ### Query parameters (none required)
 
@@ -50,7 +50,7 @@ Retrieve detail information for a specific event by ID.
 <https://api.grip.inetintel.cc.gatech.edu/dev/json/event/id/>
 
 Example:
-<https://api.grip.inetintel.cc.gatech.edu/dev/json/event/id/moas-1605039900-207384_48282>
+<https://api.grip.inetintel.cc.gatech.edu/dev/json/event/id/moas-1649166000-208485_49392>
 
 ## Prefix Event Details
 
@@ -69,7 +69,7 @@ encoded prefixes in the event separated with `_`
 
 Example:
 
-<https://api.grip.inetintel.cc.gatech.edu/dev/json/pfx_event/id/moas-1605039900-207384_48282/178.208.78.0-24>
+<https://api.grip.inetintel.cc.gatech.edu/dev/json/pfx_event/id/moas-1649166000-208485_49392/193.228.131.0-24>
 
 ## JSON Responses
 
