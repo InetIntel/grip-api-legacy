@@ -72,7 +72,7 @@ impl ElasticSearchBackend {
         let datetime = DateTime::<Utc>::from(d);
 
         let query = format!(
-            "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-{}-{:02}/_doc/{}",
+            "http://panarea1.cc.gatech.edu:9200/observatory-v4-events-{}-{}-{:02}/_doc/{}",
             event_type,
             datetime.year(),
             datetime.month(),
@@ -86,7 +86,7 @@ impl ElasticSearchBackend {
             return Ok(document);
         } else {
             let query = format!(
-                "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-{}-{:02}/event_result/{}",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v4-events-{}-{}-{:02}/event_result/{}",
                 event_type,
                 datetime.year(),
                 datetime.month(),
@@ -387,8 +387,8 @@ impl ElasticSearchBackend {
         }
 
         let index = match debug {
-            true => format!("observatory-v3-test-events-{}-*", etype),
-            false => format!("observatory-v3-events-{}-*", etype),
+            true => format!("observatory-v4-test-events-{}-*", etype),
+            false => format!("observatory-v4-events-{}-*", etype),
         };
 
         let res = self
@@ -458,11 +458,11 @@ impl ElasticSearchBackend {
         let client = reqwest::Client::new();
         let url = match debug {
             true => format!(
-                "http://panarea1.cc.gatech.edu:9200/observatory-v3-test-events-{}-*/_count",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v4-test-events-{}-*/_count",
                 etype
             ),
             false => format!(
-                "http://panarea1.cc.gatech.edu:9200/observatory-v3-events-{}-*/_count",
+                "http://panarea1.cc.gatech.edu:9200/observatory-v4-events-{}-*/_count",
                 etype
             ),
         };
